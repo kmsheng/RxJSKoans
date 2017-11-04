@@ -52,7 +52,7 @@ test('simple return', function () {
   var received = '';
   Observable.just('foo').subscribe(function (x) { received = x; });
 
-  equal(__, received);
+  equal('foo', received);
 });
 
 test('the last event', function () {
