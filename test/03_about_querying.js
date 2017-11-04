@@ -11,7 +11,7 @@ test('Basic querying', function () {
   var numbers = Observable.range(1, 100);
 
   numbers
-    .filter(function (x) { return x % __ === 0 })
+    .filter(function (x) { return x % 11 === 0 })
     .map(function (x) { return x.toString() })
     .toArray()
     .subscribe(strings.push.bind(strings));
