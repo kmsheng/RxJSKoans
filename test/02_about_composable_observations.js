@@ -36,7 +36,7 @@ test('we wrote this', function () {
       names = ["Bart", "Marge", "Wes", "Linus", "Erik", "Matt"];
 
   Observable.from(names)
-    .filter(function (n) { return n.length <= __; })
+    .filter(function (n) { return n.length <= 4; })
     .subscribe(received.push.bind(received));
 
   equal('Bart,Wes,Erik,Matt', received);
