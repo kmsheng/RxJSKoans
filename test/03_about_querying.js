@@ -38,7 +38,7 @@ test('querying over events', function () {
 test('buffering with count and skip', function () {
   var results = [];
   Observable.range(1, 10)
-    .bufferWithCount(__, __)
+    .bufferWithCount(5, 5)
     .subscribe(results.push.bind(results));
 
   equal('12345',  results[0].join(''));
