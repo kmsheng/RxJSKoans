@@ -38,7 +38,7 @@ asyncTest('launching an event in the future', function () {
 asyncTest('a watched pot', function () {
   var received = '';
   var delay = 500;
-  var timeout = 501;
+  var timeout = 700;
   var timeoutEvent = Observable.just('Tepid');
 
   Observable
