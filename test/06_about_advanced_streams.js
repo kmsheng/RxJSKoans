@@ -32,7 +32,7 @@ test('merging events', function () {
   s1.onNext('perfect.');
 
   equal('I am nobody. Nobody is perfect.', both.join(' '));
-  equal(__, first.join(' '));
+  equal('I am perfect.', first.join(' '));
 });
 
 test('splitting up', function () {
