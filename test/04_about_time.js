@@ -118,7 +118,7 @@ asyncTest('buffering', function () {
     events.onNext('s');
 
     setTimeout(function () {
-      equal(__, received.join(' '));
+      equal('RxJS Rocks', received.join(' '));
       start();
     }, 120);
   }, 120);
