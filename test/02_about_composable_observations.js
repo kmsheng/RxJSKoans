@@ -9,7 +9,7 @@ var __ = 'Fill in the blank';
 
 test('composable add', function () {
   var received = 0,
-      numbers = [10, 100, __];
+      numbers = [10, 100, 1000];
 
   Observable.from(numbers).sum().subscribe(function (x) { received = x; });
 
