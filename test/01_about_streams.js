@@ -88,7 +88,7 @@ test('all events will be received', function () {
 
   Observable.from(numbers).subscribe(function (x) { received += x; });
 
-  equal(__, received);
+  equal('Working 98765', received);
 });
 
 test('do things in the middle', function () {
