@@ -30,7 +30,7 @@ test('how event streams relate to observables', function () {
   var eventStreamResult = 1;
   var events = new Subject();
   events.subscribe(function (x) { eventStreamResult = x; });
-  events.__(73);
+  events.onNext(73);
 
   equal(observableResult, eventStreamResult);
 });
