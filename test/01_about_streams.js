@@ -68,7 +68,7 @@ test('everything counts', function () {
   var numbers = [3, 4];
   Observable.from(numbers).subscribe(function (x) { received += x; });
 
-  equal(__, received);
+  equal(7, received);
 });
 
 test('this is still an event stream', function () {
