@@ -25,7 +25,7 @@ test('querying over events', function () {
   var e = new EventEmitter();
   Observable.fromEvent(e, 'click')
     .filter(function (click) { return click.x === click.y })
-    .map(function (click) { return __ + __; })
+    .map(function (click) { return click.x + click.y; })
     .subscribe(function (x) { results = x; });
 
   e.emit('click', {x: 100, y: 50});
