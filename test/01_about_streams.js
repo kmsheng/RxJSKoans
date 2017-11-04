@@ -60,7 +60,7 @@ test('the last event', function () {
   var names = ['foo', 'bar'];
   Observable.from(names).subscribe(function (x) { received = x; });
 
-  equal(__, received);
+  equal('bar', received);
 });
 
 test('everything counts', function () {
