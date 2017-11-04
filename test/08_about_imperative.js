@@ -77,7 +77,7 @@ test('we can also have a default case', function () {
       return Observable.case(
         function () { return x; },
         cases,
-        Observable.just(__)
+        Observable.just(5)
       );
     })
     .subscribe(function (x) { result = x; });
