@@ -50,7 +50,7 @@ test('we can make test cases', function () {
     'wes': Observable.just(4)
   };
 
-  Observable.just(__)
+  Observable.just('wes')
     .flatMap(function (x) {
       return Observable.case(
         function () { return x; },
