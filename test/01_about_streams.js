@@ -106,7 +106,7 @@ test('nothing listens until you subscribe', function () {
       observable = numbers.tap(function (n) { sum += n; });
 
   equal(0, sum);
-  observable.__();
+  observable.subscribe();
 
   equal(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10, sum);
 });
