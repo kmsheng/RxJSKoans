@@ -71,7 +71,7 @@ test('checking everything', function () {
     .every(function (x) { return x % 2 === 0; })
     .subscribe(function (x) { received = x; });
 
-  equal(__, received);
+  equal(true, received);
 });
 
 test('composition means the sum is greater than the parts', function () {
