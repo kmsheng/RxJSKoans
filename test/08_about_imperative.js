@@ -92,7 +92,7 @@ test('while does something until proven false', function () {
   var source = Rx.Observable
     .while(
       function () { return ++i < 3 },
-      Rx.Observable.just(__)
+      Rx.Observable.just(42)
     )
     .subscribe(result.push.bind(result));
 
