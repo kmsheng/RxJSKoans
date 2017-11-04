@@ -9,7 +9,7 @@ test('flatMap can be a cartesian product', function () {
   var results = [];
   Observable.range(1, 3)
     .flatMap(function (x, i) {
-      return Observable.range(__, __);
+      return Observable.range(x + 1, 1);
     })
     .subscribe(results.push.bind(results));
 
