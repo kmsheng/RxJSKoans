@@ -85,5 +85,5 @@ test('multiple subscriptions', function () {
   numbers.onCompleted();
 
   equal(15, sum);
-  equal(__, average);
+  equal(2, average);
 });
