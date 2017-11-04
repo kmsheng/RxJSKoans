@@ -124,7 +124,7 @@ test('events before you subscribe do not count', function () {
   numbers.onNext(3);
   numbers.onNext(4);
 
-  equal(__, sum);
+  equal(7, sum);
 });
 
 test('events after you unsubscribe dont count', function () {
