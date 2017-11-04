@@ -23,7 +23,7 @@ asyncTest('launching an event via a scheduler', function () {
 
 asyncTest('launching an event in the future', function () {
   var received = null;
-  var time = __;
+  var time = 500;
 
   var people = new Subject();
   people.delay(time).subscribe(function (x) { received = x; });
