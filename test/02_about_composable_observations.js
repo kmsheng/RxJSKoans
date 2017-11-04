@@ -56,7 +56,7 @@ test('converting events', function () {
 test('create a more relevant stream', function () {
   var received = '',
       mouseXMovements = [100, 200, 150],
-      relativemouse = Observable.from(mouseXMovements).map(function (x) { return x - __; });
+      relativemouse = Observable.from(mouseXMovements).map(function (x) { return x - 50; });
 
   relativemouse.subscribe(function (x) { received += x + ', '; });
 
