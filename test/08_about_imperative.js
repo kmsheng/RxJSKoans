@@ -31,7 +31,13 @@ test('can make a decision with an if with an else', function () {
     })
     .subscribe(results.push.bind(results));
 
-  equal(__, results.join(''));
+  // x: 1 i: 0 ----> odd []
+  // x: 2 i: 1 ----> even 2
+  // x: 3 i: 2 ----> odd [3, 4]
+  // x: 4 i: 3 ----> even 4
+  // x: 5 i: 4 ----> odd [5, 6, 7, 8]
+
+  equal('23445678', results.join(''));
 });
 
 test('we can make test cases', function () {
