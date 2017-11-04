@@ -162,5 +162,5 @@ test('events while subscribing', function () {
 
   words.onNext('ugly');
 
-  equal(__, received.join(' '));
+  equal('you look pretty', received.join(' '));
 });
