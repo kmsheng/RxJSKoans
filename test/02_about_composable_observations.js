@@ -78,7 +78,7 @@ test('composition means the sum is greater than the parts', function () {
   var received = 0,
       numbers = Observable.range(1, 10);
 
-  numbers.filter(function (x) { return x > __; })
+  numbers.filter(function (x) { return x > 8; })
     .sum()
     .subscribe(function (x) { received = x; });
 
