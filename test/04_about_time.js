@@ -155,7 +155,7 @@ asyncTest('results can be ambiguous timing', function () {
   fst.amb(snd).subscribe(function (x) { results = x; });
 
   setTimeout(function () {
-    equal(results, __);
+    equal(results, -1);
     start();
   }, 600);
 });
