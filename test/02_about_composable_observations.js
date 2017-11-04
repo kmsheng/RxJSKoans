@@ -27,7 +27,7 @@ test('composable before and after', function () {
     .tap(function (n) { b += n; })
     .subscribe();
 
-  equal(__, a);
+  equal('123456', a);
   equal('246', b);
 });
 
