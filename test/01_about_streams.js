@@ -8,7 +8,7 @@ QUnit.module('Observable Streams');
 var __ = 'Fill in the blank';
 
 test('simple subscription', function () {
-  Observable.just(42).subscribe(function (x) { equal(x, __); });
+  Observable.just(42).subscribe(function (x) { equal(x, 42); });
 });
 
 test('what comes in goes out', function () {
