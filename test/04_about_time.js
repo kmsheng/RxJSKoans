@@ -68,7 +68,7 @@ asyncTest('you can place a time limit on how long an event should take', functio
   }, 3000);
 
   setTimeout(function () {
-    equal(__, received.join(', '));
+    equal('Started, Tepid', received.join(', '));
     start();
   }, 4000);
 });
