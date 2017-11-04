@@ -44,7 +44,7 @@ test('event streams have multiple results', function () {
   events.onNext(10);
   events.onNext(7);
 
-  equal(__, eventStreamResult);
+  equal(17, eventStreamResult);
 });
 
 // What does Observable.just() map to for a Subject?
