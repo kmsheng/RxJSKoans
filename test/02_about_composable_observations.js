@@ -47,7 +47,7 @@ test('converting events', function () {
       names = ["wE", "hOpE", "yOU", "aRe", "eNJoyIng", "tHiS"];
 
   Observable.from(names)
-    .map(function (x) { return x.__(); })
+    .map(function (x) { return x.toLowerCase(); })
     .subscribe(function (x) { received += x + ' '; });
 
   equal('we hope you are enjoying this ', received);
