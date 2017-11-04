@@ -12,7 +12,7 @@ test('simple subscription', function () {
 });
 
 test('what comes in goes out', function () {
-  Observable.just(__).subscribe(function (x) { equal(x, 101); });
+  Observable.just(101).subscribe(function (x) { equal(x, 101); });
 });
 
 // Which interface Rx apply? (hint: what does "just()" return)
