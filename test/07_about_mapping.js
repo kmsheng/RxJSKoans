@@ -24,5 +24,9 @@ test('flatMapLatest only gets us the latest value', function () {
     })
     .subscribe(results.push.bind(results));
 
+  // [1, 2, 3] -> 1
+  // [2, 3, 4] -> 2
+  // [3, 4, 5] -> 3, 4, 5
+
   equal('12345', results.join(''));
 });
