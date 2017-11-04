@@ -56,7 +56,7 @@ test('need to subscribe immediately when splitting', function () {
   var split = numbers.groupBy(function (n) { return n % 2; });
 
   split.subscribe(function (g) {
-    g.average().__(function (a) { averages[g.key] = a; });
+    g.average().subscribe(function (a) { averages[g.key] = a; });
   });
 
   equal(22, averages[0]);
