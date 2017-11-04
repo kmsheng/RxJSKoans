@@ -141,7 +141,7 @@ asyncTest('time between calls', function () {
     setTimeout(function () {
       events.onNext('down');
 
-      equal(__, received.join(' '));
+      equal('slow down', received.join(' '));
       start();
     }, 120);
   }, 120);
