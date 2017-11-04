@@ -38,7 +38,7 @@ test('merging events', function () {
 test('splitting up', function () {
   var oddsAndEvens = [];
   var numbers = Observable.range(1, 9);
-  var split = numbers.groupBy(function (n) { return n % __; });
+  var split = numbers.groupBy(function (n) { return n % 2; });
   split.subscribe(function (group) {
     group.subscribe(function (n) {
       oddsAndEvens[group.key] || (oddsAndEvens[group.key] = '');
