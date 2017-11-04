@@ -92,7 +92,7 @@ asyncTest('debouncing', function () {
     events.onNext('rxjs');
 
     setTimeout(function () {
-      equal(__, received.join(' '));
+      equal('from rxjs', received.join(' '));
       start();
     }, 120);
   }, 120);
