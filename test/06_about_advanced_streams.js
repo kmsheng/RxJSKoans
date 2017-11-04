@@ -11,7 +11,7 @@ test('merging', function () {
   var you = Observable.of(1,2,3);
   var me = Observable.of('A','B','C');
   you.merge(me).subscribe(easy.push.bind(easy));
-  equal(easy.join(' '), __);
+  equal(easy.join(' '), '1 A 2 B 3 C');
 });
 
 test('merging events', function () {
