@@ -18,7 +18,7 @@ test('what comes in goes out', function () {
 // Which interface Rx apply? (hint: what does "just()" return)
 test('this is the same as an event stream', function () {
   var events = new Subject();
-  events.subscribe(function (x) { equal(__, x); });
+  events.subscribe(function (x) { equal(37, x); });
   events.onNext(37);
 });
 
