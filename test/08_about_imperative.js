@@ -16,7 +16,7 @@ test('can make a decision with an if with no else', function () {
     })
     .subscribe(results.push.bind(results));
 
-  equal(__, results.join(''));
+  equal('246810', results.join(''));
 });
 
 test('can make a decision with an if with an else', function () {
